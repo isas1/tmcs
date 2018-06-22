@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './cslogo.png';
 import './App.css';
-import NavComponent from './Navbar.js';
-
+import NBar from './components/navbar/navbar';
 
 class App extends Component {
 
@@ -28,14 +27,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-		<navbar> </navbar>
-        <div className="App-header">
+        <NBar />
+        <div>
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to TMCS</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
