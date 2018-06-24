@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './cslogo.png';
 import './App.css';
-import NBar from './components/navbar/navbar';
+import NBar from './components/navbar/navbar.jsx';
+import HomepageLayout from "./components/home/home.jsx";
 
 class App extends Component {
 
@@ -28,10 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <NBar />
-        <div>
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to TMCS</h2>
-        </div>
+        <HomepageLayout />
       </div>
     );
   }

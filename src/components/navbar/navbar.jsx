@@ -9,6 +9,7 @@ import {
   Responsive
 } from "semantic-ui-react";
 import logo from '../../cslogo.png';
+import HomepageLayout from '../home/home.jsx'
 
 const NavBarMobile = ({
   children,
@@ -119,8 +120,7 @@ const rightItems = [
 
 const NBar = () => (
   <NavBar leftItems={leftItems} rightItems={rightItems}>
-    <div>
-      </div>
+    <HomepageLayout />
   </NavBar>
 );
 
