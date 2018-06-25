@@ -24,7 +24,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as="h1"
-      content="Imagine-a-Company"
+      content="Want to code? Getting overwhelmed?"
       inverted
       style={{
         fontSize: mobile ? "2em" : "4em",
@@ -35,7 +35,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Do whatever you want when you want to."
+      content="Stop. Relax. Code."
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
@@ -44,7 +44,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button primary size="huge">
-      Get Started
+      Get a tutor
       <Icon name="right arrow" />
     </Button>
   </Container>
@@ -185,15 +185,13 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Help Companies and Companions
+              Learn more **ADD VIDEO**<video src="" hidden></video>
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
+              Information about TeachMeComputerScience
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Make Bananas That Can Dance
+              Why I do this.
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               Yes that's right, you thought it was the stuff of dreams, but even
