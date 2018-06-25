@@ -191,11 +191,10 @@ const HomepageLayout = () => (
               Information about TeachMeComputerScience
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              Why I do this.
+              Why I do this
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered.
+              Information about why, how and what I do
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -209,7 +208,7 @@ const HomepageLayout = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Button size="huge">Check Them Out</Button>
+            <Button size="huge">Hire a tutor</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
