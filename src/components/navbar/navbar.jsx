@@ -10,6 +10,7 @@ import {
 } from "semantic-ui-react";
 import logo from '../../cslogo.png';
 import HomepageLayout from '../home/home.jsx'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const NavBarMobile = ({
   children,
@@ -109,7 +110,8 @@ class NavBar extends Component {
 //Sidebar components
 const leftItems = [
   { as: "a", content: "Home", key: "home" },
-  { as: "a", content: "Users", key: "users" }
+  { as: "a", content: "About", key: "about" },
+  { as: "a", content: "Contact", key: "contact" }
 ];
 
 //Right menu items
@@ -120,8 +122,41 @@ const rightItems = [
 
 const NBar = () => (
   <NavBar leftItems={leftItems} rightItems={rightItems}>
+    <Router>
+    <div>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+
+      <hr />
+
+      <Route exact path="/" component={Home} />
+    </div>
+  </Router>
+
+    <ul>
+      {_.map(leftItems, item => <li {...item} />)}
+    </ul>
     <HomepageLayout />
+    
   </NavBar>
+);
+
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+);
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
 );
 
 export default NBar;

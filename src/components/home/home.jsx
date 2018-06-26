@@ -35,7 +35,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Stop. Relax. Code."
+      content="Stop. Relax. Learn."
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
@@ -44,7 +44,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button primary size="huge">
-      Get a tutor
+      Teach Me Computer Science
       <Icon name="right arrow" />
     </Button>
   </Container>
