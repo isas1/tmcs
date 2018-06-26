@@ -136,6 +136,7 @@ const NBar = () => (
       <hr />
 
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
     </div>
   </Router>
 
