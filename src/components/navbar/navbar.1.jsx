@@ -1,5 +1,4 @@
-// Original Navbar
-
+// Copy of NAVBAR
 import _ from "lodash";
 import React, { Component } from "react";
 import {
@@ -122,33 +121,32 @@ const rightItems = [
   { as: "a", content: "Register", key: "register" }
 ];
 
-const NBar = () => (
-  <NavBar leftItems={leftItems} rightItems={rightItems}>
-    <Router>
-    <div>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-      </ul>
+class NBar extends Component {
+  
+  constructor (props) {
+    super(props);
+    this.state = { message: 'Hello'}
+    this.handleItemClick = this.handleItemClick.bind(this);
+  }
+  
 
-      <hr />
+  handleItemClick() {
+    console.log({this.state.message});
+  }
 
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-    </div>
-  </Router>
+  render () {
+    return <NavBar leftItems={leftItems} rightItems={rightItems}>
+    
 
     <ul>
+      <li ><a href="" onClick={this.handleItemClick}>Test</a>  </li>
       {_.map(leftItems, item => <li {...item} onClick={this.handleItemClick}/>)}
     </ul>
     <HomepageLayout />
     
   </NavBar>
-);
+  }
+};
 
 const Home = () => (
   <div>
