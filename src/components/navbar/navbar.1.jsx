@@ -131,7 +131,7 @@ class NBar extends Component {
   
 
   handleItemClick() {
-    console.log({this.state.message});
+    //console.log({this.state.message});
   }
 
   render () {
